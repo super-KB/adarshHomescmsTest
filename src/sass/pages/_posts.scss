@@ -1,0 +1,127 @@
+.expert-card-carousel {
+  text-decoration: none;
+  color: $color-black;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+
+  @include respond(tab-land) {
+    //width < 1200px ?
+    max-width: 100rem;
+  }
+
+  @include respond(phone-med) {
+    //width < 1200px ?
+    max-width: 70rem;
+  }
+
+  @include respond(phone) {
+    //width < 1200px ?
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+.expert-card {
+  background-color: #fff;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 0.5rem;
+  text-align: center;
+
+  img {
+    width: 80%;
+    align-self: center;
+
+    @include respond(tab-pot) {
+      //width < 993px ?
+      width: 65%;
+    }
+
+    @include respond(phone) {
+      //width < 600px ?
+      width: 60%;
+    }
+  }
+
+  &__text--container {
+    h4 {
+      background-color: #fff;
+      // font-size: $body-font;
+      padding: 0.5rem 3rem;
+    }
+
+    p {
+      background-color: #000;
+      padding: 1rem 3rem;
+
+      .line-1 {
+        color: #fff;
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+      }
+
+      .line-2 {
+        color: #fff;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.card-1 {
+  div {
+    p {
+      padding: 1rem;
+    }
+  }
+}
+
+.card-5 {
+  img {
+    align-self: flex-end;
+    width: 60%;
+
+    @include respond(tab-pot) {
+      //width < 993px ?
+      width: 55%;
+    }
+
+    @include respond(phone) {
+      //width < 993px ?
+      width: 50%;
+    }
+  }
+}
+
+.card-8,
+.card-9,
+.card-10,
+.card-11,
+.card-12 {
+  img {
+    width: 100px;
+
+    @include respond(tab-pot) {
+      //width < 993px ?
+      width: 55%;
+    }
+
+    @include respond(phone) {
+      //width < 993px ?
+      width: 50%;
+    }
+  }
+}
+
+.glider-dots {
+  margin-top: 2rem;
+}
