@@ -344,7 +344,7 @@ layout: base.njk
         <a href="#popup_designs" class="btn-text">View all</a>
       </div>
       <div class="glider glider-wrap">
-        {%- for post in collections.post -%}
+        {%- for post in collections.post | reverse -%}
         <div class="expert-card expert-card-carousel card-1">
           <img
             src="{{ post.data.image }}"
@@ -573,7 +573,7 @@ layout: base.njk
     <div class="grid-container">
       <a href="#section-" class="popup__close">&times;</a>
 
-      {%- for post in collections.post -%}
+      {%- for post in collections.post | reverse -%}
       <div class="grid-item">
         {% include 'posts.njk' %}
       </div>
