@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/css/fonts');
   eleventyConfig.addPassthroughCopy('./src/glider.js');
   eleventyConfig.addPassthroughCopy('./src/glider.min.js');
+  eleventyConfig.addPassthroughCopy('./src/admin');
 
   return {
     dir: {
